@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PretragaServlet</servlet-name>
+        <servlet-class>controller.PretragaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UnosServlet</servlet-name>
+        <servlet-class>controller.UnosServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PrikazServlet</servlet-name>
+        <servlet-class>controller.PrikazServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>IzmenaServlet</servlet-name>
+        <servlet-class>controller.IzmenaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PretragaServlet</servlet-name>
+        <url-pattern>/PretragaServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UnosServlet</servlet-name>
+        <url-pattern>/UnosServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PrikazServlet</servlet-name>
+        <url-pattern>/PrikazServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IzmenaServlet</servlet-name>
+        <url-pattern>/IzmenaServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
